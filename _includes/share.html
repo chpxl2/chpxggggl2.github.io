@@ -1,7 +1,7 @@
 <section class="share">
-    <h3>Share</h3>
-    <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=&quot;{{ page.twitter_text }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
-    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+    <h3>如果喜欢的话，快跟朋友分享吧！</h3>
+    <a aria-label="Share on Twitter" href="http://service.weibo.com/share/share.php?title=&quot;{{ page.twitter_text }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
+    onclick="window.open(this.href, "_blank", "height=495, width=510, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");return false;" title="分享微博">
         <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
     </a>
     <a aria-label="Share on Facebook"href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
